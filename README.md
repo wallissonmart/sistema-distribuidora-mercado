@@ -4,6 +4,7 @@
 <p align="left">
  <a href="#status">Status</a> •
  <a href="#acessar">Como acessar</a> • 
+  <a href="#features">Features</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#licenca">Licença</a> • 
  <a href="#autor">Autor</a>
@@ -18,7 +19,7 @@
 <h1 align="left" id="acessar">Como acessar</h1>
 Para acessar o sistema basta ter algum navegador instalado em seu dispositivo e acessar o seguinte link: #
 
-<h1 align="left" id="acessar">Features</h1>
+<h1 align="left" id="features">Features</h1>
 
 - [x] Cadastro de usuário
 - [x] Cadastro de produtos
