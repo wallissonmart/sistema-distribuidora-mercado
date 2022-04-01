@@ -35,10 +35,10 @@ Para acessar o sistema basta ter algum navegador instalado em seu dispositivo e 
 - [MySQL](https://dev.mysql.com/doc/)
 
 <h1 align="left" id="autor">✍️ Autor</h1>
-<a style="font-size=20px" href="https://github.com/wallissonmart">
- <img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/93344198?s=400&u=efc1c28e0cfb7b7e29bdf3ac50a79d0ddcf8b467&v=4" width="100px;" alt=""/>
+<a href="https://github.com/wallissonmart">
+ <img src="https://avatars.githubusercontent.com/u/93344198?s=400&u=efc1c28e0cfb7b7e29bdf3ac50a79d0ddcf8b467&v=4" width="100px;" alt=""/>
  <br/>
- <sub><b>Wallisson Martins</b></sub></a> <a href=" https://github.com/wallissonmart" title=GitHub"</a>
+ <sub><b style="font-size=20px">Wallisson Martins</b></sub></a> <a href=" https://github.com/wallissonmart" title=GitHub"</a>
 <br/>
 Entre em contato:
 
