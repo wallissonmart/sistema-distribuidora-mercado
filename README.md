@@ -4,7 +4,7 @@
 <p align="left">
  <a href="#status">Status</a> •
  <a href="#acessar">Como acessar</a> • 
-  <a href="#funcionalidades">Features</a> • 
+  <a href="#funcionalidades">Funcionalidades</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#autor">Autor</a>
 </p>
@@ -22,7 +22,7 @@ Para acessar o sistema basta ter algum navegador instalado em seu dispositivo e 
 
 - [x] Loguin com autenticação de usuário;
 - [x] Cadastro, edição e exclusão de produtos;
-- [x] Adicionar ao carrinho de compras;
+- [x] Adicionar produto ao carrinho de compras;
 - [x] Efetuar pedido;
 - [x] Enviar e-mails;
 
@@ -35,7 +35,7 @@ Para acessar o sistema basta ter algum navegador instalado em seu dispositivo e 
 - [MySQL](https://dev.mysql.com/doc/)
 
 <h1 align="left" id="autor">✍️ Autor</h1>
-<a href="https://github.com/wallissonmart">
+<a style="font-size=20px" href="https://github.com/wallissonmart">
  <img style="border-radius: 60%;" src="https://avatars.githubusercontent.com/u/93344198?s=400&u=efc1c28e0cfb7b7e29bdf3ac50a79d0ddcf8b467&v=4" width="100px;" alt=""/>
  <br/>
  <sub><b>Wallisson Martins</b></sub></a> <a href=" https://github.com/wallissonmart" title=GitHub"</a>
