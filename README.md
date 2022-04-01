@@ -1,4 +1,4 @@
-<h1 align="left">Sistema online para distribuidora/mercado</h1>
+<h1 align="left">Sistema online para distribuidora/mercado 🛒</h1>
 <p align="left">Sistema para administar estoque de produtos e para visualisar ou comprar produtos.</p>
 
 <p align="left">
@@ -24,7 +24,7 @@ Para acessar o sistema basta ter algum navegador instalado em seu dispositivo e 
 - [x] Cadastro, edição e exclusão de produtos;
 - [x] Adicionar produto ao carrinho de compras;
 - [x] Efetuar pedido;
-- [x] Enviar e-mails;
+- [x] Enviar e-mails.
 
 <h1 align="left" id="tecnologias">🛠️ Técnicas e tecnologias utilizadas</h1>
 
