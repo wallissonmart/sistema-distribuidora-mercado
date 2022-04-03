@@ -4,7 +4,7 @@
 <p align="left">
  <a href="#status">Status</a> •
  <a href="#acessar">Como acessar</a> • 
-  <a href="#funcionalidades">Funcionalidades</a> • 
+ <a href="#funcionalidades">Funcionalidades</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#autor">Autor</a>
 </p>
