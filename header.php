@@ -4,12 +4,12 @@
 
    <div class="flex">
 
-      <a href="#" class="logo">Comidas</a>
+      <a href="#" class="logo">Temdetudo</a>
 
       <nav class="navbar">
          <a href="admin.php">Adicionar produtos</a>
          <a href="products.php">Visualisar produtos</a>
-         <a href="loguin/loguin.php">Sair</a>
+         <a href="loguin/logout.php">Sair</a>
       </nav>
 
       <div id="menu-btn" class="fas fa-bars"></div>

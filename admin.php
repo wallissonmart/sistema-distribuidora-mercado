@@ -85,6 +85,8 @@ if (isset($_POST['update_product'])) {
 
    <?php include 'header.php'; ?>
 
+   <h2 style="font-size: 2.8rem" ; class="h1-responsive font-weight-bold text-center my-4">Bem-vindo ao painel de administrador <?php echo $_SESSION['nome']; ?>, o que deseja fazer?</h2>
+
    <div class="container">
 
       <section>
@@ -121,10 +123,10 @@ if (isset($_POST['update_product'])) {
                      <tr>
                         <td><img src="uploaded_img/<?php echo $row['image']; ?>" height="100" alt=""></td>
                         <td><?php echo $row['name']; ?></td>
-                        <td>$<?php echo $row['price']; ?>/-</td>
+                        <td>R$<?php echo $row['price']; ?></td>
                         <td>
-                           <a href="admin.php?delete=<?php echo $row['id']; ?>" class="delete-btn" onclick="return confirm('are your sure you want to delete this?');"> <i class="fas fa-trash"></i> delete </a>
-                           <a href="admin.php?edit=<?php echo $row['id']; ?>" class="option-btn"> <i class="fas fa-edit"></i> update </a>
+                           <a href="admin.php?delete=<?php echo $row['id']; ?>" class="delete-btn" onclick="return confirm('Tem certeza que deseja excluir o produto?');"> <i class="fas fa-trash"></i>Excluir</a>
+                           <a href="admin.php?edit=<?php echo $row['id']; ?>" class="option-btn"> <i class="fas fa-edit"></i>Atualizar</a>
                         </td>
                      </tr>
 
@@ -156,8 +158,8 @@ if (isset($_POST['update_product'])) {
                      <input type="text" class="box" required name="update_p_name" value="<?php echo $fetch_edit['name']; ?>">
                      <input type="number" min="0" class="box" required name="update_p_price" value="<?php echo $fetch_edit['price']; ?>">
                      <input type="file" class="box" required name="update_p_image" accept="image/png, image/jpg, image/jpeg">
-                     <input type="submit" value="update the prodcut" name="update_product" class="btn">
-                     <input type="reset" value="cancel" id="close-edit" class="option-btn">
+                     <input type="submit" value="Atualizar produto" name="update_product" class="btn">
+                     <input type="reset" value="Cancelar" id="close-edit" class="option-btn">
                   </form>
 
          <?php

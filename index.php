@@ -37,7 +37,7 @@ if (isset($_POST['add_to_cart'])) {
     <link rel="stylesheet" href="css/sobre.css">
     <link rel="stylesheet" href="css/contato.css">
     <link rel="stylesheet" href="css/footer.css">
-    
+
     <title>Home | Temdetudo</title>
 
 </head>
@@ -66,10 +66,10 @@ if (isset($_POST['add_to_cart'])) {
                 <img class="d-block w-100 fs-1 text-dark" src="img/slide-1.jpeg" height="400px" alt="Primeiro slide">
             </div>
             <div class="carousel-item text-center">
-                <img class="d-block w-100 fs-1 text-dark" src="..." height="400px" alt="Segundo slide">
+                <img class="d-block w-100 fs-1 text-dark" src="img/slide-2.jpeg" height="400px" alt="Segundo slide">
             </div>
             <div class="carousel-item text-center">
-                <img class="d-block w-100 fs-1 text-dark" src="..." height="400px" alt="Terceiro slide">
+                <img class="d-block w-100 fs-1 text-dark" src="img/slide-3.jpeg" height="400px" alt="Terceiro slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
@@ -87,9 +87,14 @@ if (isset($_POST['add_to_cart'])) {
 
         <section class="products">
 
-        <h2 class="h1-responsive font-weight-bold text-center my-4">PRODUTOS</h2>
+            <h2 class="h1-responsive font-weight-bold text-center my-4">PRODUTOS</h2>
 
-            <div class="box-container">
+            <div id="divBusca">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" id="txtBusca" placeholder="Digite algum produto que deseja encontrar..." />
+            </div>
+
+            <div class="box-container my-5">
 
                 <?php
 
@@ -97,16 +102,15 @@ if (isset($_POST['add_to_cart'])) {
                 if (mysqli_num_rows($select_products) > 0) {
                     while ($fetch_product = mysqli_fetch_assoc($select_products)) {
                 ?>
-
                         <form action="" method="POST">
                             <div class="box">
                                 <img src="uploaded_img/<?php echo $fetch_product['image']; ?>" alt="">
                                 <h3><?php echo $fetch_product['name']; ?></h3>
-                                <div class="price">$<?php echo $fetch_product['price']; ?>/-</div>
-                                <input type="hidden" name="product_name" value="<?php echo $fetch_product['name']; ?>">
+                                <div class="price">R$ <?php echo $fetch_product['price']; ?></div>
+                                <input type="hidden" name="product_name" class="product_name" value="<?php echo $fetch_product['name']; ?>">
                                 <input type="hidden" name="product_price" value="<?php echo $fetch_product['price']; ?>">
                                 <input type="hidden" name="product_image" value="<?php echo $fetch_product['image']; ?>">
-                                <input type="submit" class="btn" value="add to cart" name="add_to_cart">
+                                <input type="submit" class="btn" value="Adicionar ao carrinho" name="add_to_cart">
                             </div>
                         </form>
 
@@ -121,14 +125,16 @@ if (isset($_POST['add_to_cart'])) {
 
     </div>
 
-    <?php include 'sobre.php'; ?>
+    <?php include 'components/sobre.php'; ?>
 
-    <?php include 'contato.php'; ?>
+    <?php include 'components/contato.php'; ?>
 
-    <?php include 'footer.php'; ?>
-
+    <?php include 'components/footer.php'; ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
 </body>
 
 </html>

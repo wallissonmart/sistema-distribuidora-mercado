@@ -63,11 +63,12 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="../css/header_index.css">
 
     <title>Área restrita | Temdetudo</title>
+    
 </head>
 
 <body>
@@ -85,7 +86,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
                                 <input type="text" name="email" class="text form-control my-4 py-2" placeholder="Usuário">
                                 <input type="password" name="senha" class="text form-control my-4 py-2" placeholder="Senha">
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-primary">Loguin</button>
+                                    <button type="submit" class="btn btn-primary btn-loguin">Loguin</button>
                                 </div>
                             </form>
                             <a href="../index.php" class="text-decoration-none">Voltar</a>

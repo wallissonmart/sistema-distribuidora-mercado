@@ -3,7 +3,7 @@
     <p class="text-center w-responsive mx-auto mb-5">Você tem alguma pergunta? Por favor, não hesite em nos contatar diretamente. Nossa equipe entrará em contato com você em questão de horas para ajudá-lo.</p>
     <div class="row sobre">
         <div class="col-md-7 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+            <form id="contact-form" name="contact-form" method="POST">
 
                 <div class="row sobre-colunas">
 
@@ -16,8 +16,8 @@
 
                     <div class="col-md-6 sobre-2">
                         <div class="md-form mb-0">
-                            <label for="email" class="">Seu e-mail</label>
-                            <input type="text" id="email" name="email" class="form-control">
+                            <label for="sobrenome" class="">Seu sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome" class="form-control">
                         </div>
                     </div>
 
@@ -45,7 +45,7 @@
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary fs-2 p-2" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+                <a class="btn btn-primary fs-2 p-2" onclick="enviar()">Enviar</a>
             </div>
             <div class="status"></div>
         </div>
@@ -67,9 +67,3 @@
         </div>
     </div>
 </section>
-
-<?php
-
-
-
-?>
