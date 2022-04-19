@@ -4,7 +4,7 @@
 <p align="left">
  <a href="#status">Status</a> •
  <a href="#acessar">Como acessar</a> • 
-  <a href="#funcionalidades">Funcionalidades</a> • 
+ <a href="#funcionalidades">Funcionalidades</a> • 
  <a href="#tecnologias">Tecnologias</a> • 
  <a href="#autor">Autor</a>
 </p>
@@ -16,7 +16,7 @@
 </h3>
 
 <h1 align="left" id="acessar">👆 Como acessar</h1>
-Para acessar o sistema basta ter algum navegador instalado em seu dispositivo e acessar o seguinte link: ---
+Para acessar o sistema online bastar clicar no seguinte link: ---
 
 <h1 align="left" id="funcionalidades">⚙️ Funcionalidades</h1>
 
