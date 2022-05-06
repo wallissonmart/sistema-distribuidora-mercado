@@ -1,7 +1,7 @@
 <h1 align="left">Sistema online para distribuidora/mercado 🛒</h1>
 <p align="left">Sistema para administar estoque de produtos e para visualisar ou comprar produtos.</p>
 
-<p align="left">
+<p align="left"> •
  <a href="#status">Status</a> •
  <a href="#acessar">Como acessar</a> • 
  <a href="#funcionalidades">Funcionalidades</a> • 
