@@ -46,7 +46,7 @@ if (isset($_POST['add_to_cart'])) {
 
    <div class="container">
 
-      <section class="products">
+      <section class="products" id="products">
 
          <h1 style="font-size: 3.8rem;" class="h1-responsive font-weight-bold text-center my-4">PRODUTOS</h1>
 

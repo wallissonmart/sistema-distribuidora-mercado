@@ -85,7 +85,7 @@ if (isset($_POST['add_to_cart'])) {
 
     <div class="container">
 
-        <section class="products">
+        <section class="products" id="products">
 
             <h2 class="h1-responsive font-weight-bold text-center my-4">PRODUTOS</h2>
 

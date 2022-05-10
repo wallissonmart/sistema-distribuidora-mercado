@@ -14,11 +14,11 @@
                 <div class="col-lg-3 col-xs-12 links">
                     <h2 class="mt-lg-0 mt-sm-3 text-white">Links</h2>
                     <ul class="m-0 p-0 text-white-50 fs-3">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Contato</a></li>
-                        <li><a href="#">Carrinho</a></li>
+                        <li><a href="index.php#myCarousel">Home</a></li>
+                        <li><a href="index.php#products">Produtos</a></li>
+                        <li><a href="index.php#sobre">Sobre</a></li>
+                        <li><a href="index.php#contato">Contato</a></li>
+                        <li><a href="cart.php">Carrinho</a></li>
                         <li><a href="loguin/loguin.php">Loguin</a></li>
                     </ul>
                 </div>

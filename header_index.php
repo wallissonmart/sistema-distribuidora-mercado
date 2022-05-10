@@ -5,10 +5,10 @@
       <a href="#" class="logo">Temdetudo</a>
 
       <nav class="navbar">
-         <a href="index.php">Home</a>
-         <a href="#">Produtos</a>
-         <a href="#">Sobre</a>
-         <a href="#contato">Contato</a>
+         <a href="index.php#myCarousel">Home</a>
+         <a href="index.php#products">Produtos</a>
+         <a href="index.php#sobre">Sobre</a>
+         <a href="index.php#contato">Contato</a>
       </nav>
 
       <?php
