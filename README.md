@@ -33,6 +33,7 @@ Para acessar o sistema online bastar clicar no seguinte link: ---
 - [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/)
 - [PHP](https://www.php.net/docs.php)
 - [MySQL](https://dev.mysql.com/doc/)
+- [EmailJS](https://www.emailjs.com/docs/)
 
 <h1 align="left" id="autor">✍️ Autor</h1>
 <a href="https://github.com/wallissonmart">
