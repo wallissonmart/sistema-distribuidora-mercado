@@ -45,7 +45,7 @@
             </form>
 
             <div class="text-center text-md-left">
-                <a class="btn btn-primary fs-2 p-2" onclick="enviar()">Enviar</a>
+                <a class="btn btn-primary fs-2 p-2" onclick="enviarEmail()">Enviar</a>
             </div>
             <div class="status"></div>
         </div>

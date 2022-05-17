@@ -1,7 +1,6 @@
 <?php
 
 @include 'config.php';
-@include 'loguin/protect.php';
 
 if (isset($_POST['order_btn'])) {
 
@@ -73,7 +72,7 @@ if (isset($_POST['order_btn'])) {
 
 <body>
 
-   <?php include 'header.php'; ?>
+   <?php include 'header_index.php'; ?>
 
    <div class="container">
 

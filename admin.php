@@ -63,10 +63,8 @@ if (isset($_POST['update_product'])) {
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Administração | Temdetudo</title>
 
-   <!-- font awesome cdn link  -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-   <!-- custom css file link  -->
    <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -152,7 +150,7 @@ if (isset($_POST['update_product'])) {
                while ($fetch_edit = mysqli_fetch_assoc($edit_query)) {
          ?>
 
-                  <form action="" method="post" enctype="multipart/form-data">
+                  <form action="" method="post" enctype="multipart/form-data" id="form-modal">
                      <img src="uploaded_img/<?php echo $fetch_edit['image']; ?>" height="200" alt="">
                      <input type="hidden" name="update_p_id" value="<?php echo $fetch_edit['id']; ?>">
                      <input type="text" class="box" required name="update_p_name" value="<?php echo $fetch_edit['name']; ?>">
@@ -173,21 +171,6 @@ if (isset($_POST['update_product'])) {
 
    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   <!-- custom js file link  -->
    <script src="js/script.js"></script>
 
 </body>
