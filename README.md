@@ -24,7 +24,9 @@ Para acessar o sistema online bastar clicar no seguinte link: ---
 - [x] Cadastro, edição e exclusão de produtos;
 - [x] Adicionar produto ao carrinho de compras;
 - [x] Efetuar pedido;
-- [x] Enviar e-mails.
+- [x] Enviar e-mails;
+- [x] Carrossel;
+- [x] Design responsivo;
 
 <h1 align="left" id="tecnologias">🛠️ Técnicas e tecnologias utilizadas</h1>
 
@@ -34,6 +36,7 @@ Para acessar o sistema online bastar clicar no seguinte link: ---
 - [PHP](https://www.php.net/docs.php)
 - [MySQL](https://dev.mysql.com/doc/)
 - [EmailJS](https://www.emailjs.com/docs/)
+- [jQuery](https://api.jquery.com/)
 
 <h1 align="left" id="autor">✍️ Autor</h1>
 <a href="https://github.com/wallissonmart">

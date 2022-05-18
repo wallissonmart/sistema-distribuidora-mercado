@@ -9,7 +9,8 @@
       <nav class="navbar">
          <a href="admin.php">Adicionar produtos</a>
          <a href="products.php">Visualisar produtos</a>
-         <a href="loguin/logout.php">Sair</a>
+         <a href="pedidos.php">Visualisar pedidos</a>
+         <a href="loguin/logout.php"><i class="fa-solid fa-right-from-bracket"></i> Sair</a>
       </nav>
 
       <div id="menu-btn" class="fas fa-bars"></div>

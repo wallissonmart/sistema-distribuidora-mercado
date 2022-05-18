@@ -2,16 +2,6 @@
 
 @include 'config.php';
 
-if (isset($_POST['add_to_cart'])) {
-
-   $product_name = $_POST['product_name'];
-   $product_price = $_POST['product_price'];
-   $product_image = $_POST['product_image'];
-   $product_quantity = 1;
-
-   $select_cart = mysqli_query($conn, "SELECT * FROM `cart` WHERE name = '$product_name'");
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -31,16 +21,6 @@ if (isset($_POST['add_to_cart'])) {
 </head>
 
 <body>
-
-   <?php
-
-   if (isset($message)) {
-      foreach ($message as $message) {
-         echo '<div class="message"><span>' . $message . '</span> <i class="fas fa-times" onclick="this.parentElement.style.display = `none`;"></i> </div>';
-      };
-   };
-
-   ?>
 
    <?php include 'header.php'; ?>
 

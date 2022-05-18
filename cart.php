@@ -90,7 +90,7 @@ if (isset($_GET['delete_all'])) {
                };
                ?>
                <tr class="table-bottom">
-                  <td><a href="index.php" class="option-btn" style="margin-top: 0;">Continuar comprando</a></td>
+                  <td><a href="index.php#products" class="option-btn" style="margin-top: 0;">Continuar comprando</a></td>
                   <td colspan="3">Total geral</td>
                   <td>R$<?php echo $grand_total; ?></td>
                   <td><a href="cart.php?delete_all" onclick="return confirm('Tem certeza que deseja excluir tudo?');" class="delete-btn"> <i class="fas fa-trash"></i>Excluir tudo</a></td>

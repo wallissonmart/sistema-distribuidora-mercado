@@ -66,3 +66,24 @@ function enviarEmail() {
   limparFormulario()
 }
 
+
+function enviarEmailConfirmacao() {
+
+   const nome = document.getElementById('name_confirmacao').value;
+   const email = document.getElementById('email_confirmacao').value;
+ 
+   var templateParams = {
+      nome_compra: nome,
+      email_confirmacao: email
+   };
+ 
+   emailjs.send('gmail', 'template_confirmacao', templateParams)
+      .then(function(response) {
+         console.log('E-mail enviado com sucesso!', response.status, response.text);
+         alert("Um e-mail de confirmação de pedido chegará em breve!")
+      }, function(error) {
+         console.log('Falha ao enviar e-mail de confirmação de pedido...', error);
+      });
+
+}
+

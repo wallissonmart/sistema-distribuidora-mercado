@@ -17,13 +17,13 @@ if (isset($_POST['order_btn'])) {
    $price_total = 0;
    if (mysqli_num_rows($cart_query) > 0) {
       while ($product_item = mysqli_fetch_assoc($cart_query)) {
-         $product_name[] = $product_item['name'] . ' (' . $product_item['quantity'] . ') ';
+         $product_name[] = $product_item['name'] . '(' . $product_item['quantity'] . ')';
          $product_price = number_format($product_item['price'] * $product_item['quantity']);
          $price_total += $product_price;
       };
    };
 
-   $product_name = isset($_POST['order_btn']) && is_array($_POST['order_btn']) ? $_POST['order_btn'] : [];
+
    $total_product = implode(', ', $product_name);
 
    $detail_query = mysqli_query($conn, "INSERT INTO `order`(name, number, email, method, flat, street, city, state, total_products, total_price) VALUES('$name','$number','$email','$method','$flat','$street','$city','$state','$total_product','$price_total')") or die('query failed');
@@ -35,7 +35,7 @@ if (isset($_POST['order_btn'])) {
          <h3>Compra realizada com sucesso!</h3>
          <div class='order-detail'>
             <span>" . $total_product . "</span>
-            <span class='total'> total : R$" . $price_total . " </span>
+            <span class='total'> Total : R$" . $price_total . " </span>
          </div>
          <div class='customer-details'>
             <p> Seu nome: <span>" . $name . "</span> </p>
@@ -45,7 +45,7 @@ if (isset($_POST['order_btn'])) {
             <p> Método de pagamento: <span>" . $method . "</span> </p>
             <p>Seu produto chegará em breve!</p>
          </div>
-            <a href='products.php' class='btn'>Continuar comprando</a>
+            <a href='cart.php?delete_all' class='btn'>Continuar comprando</a>
          </div>
       </div>
       ";
@@ -105,15 +105,15 @@ if (isset($_POST['order_btn'])) {
             <div class="flex">
                <div class="inputBox">
                   <span>Seu nome</span>
-                  <input type="text" placeholder="Ex.: João" name="name" required>
+                  <input type="text" placeholder="Ex.: João" name="name" id="name_confirmacao" required>
                </div>
                <div class="inputBox">
                   <span>Seu número</span>
-                  <input type="number" placeholder="Ex.: (61) 99999-4444" name="number" required>
+                  <input type="text" placeholder="Ex.: (61) 99999-4444" name="number" id="numero_confirmacao" required>
                </div>
                <div class="inputBox">
                   <span>Seu e-mail</span>
-                  <input type="email" placeholder="Ex.: joao@gmail.com" name="email" required>
+                  <input type="email" placeholder="Ex.: joao@gmail.com" name="email" id="email_confirmacao" class="numero_confirmacao" required>
                </div>
                <div class="inputBox">
                   <span>Método de pagamento</span>
@@ -142,6 +142,7 @@ if (isset($_POST['order_btn'])) {
                </div>
 
             </div>
+            <input type="button" onclick="enviarEmailConfirmacao()" value="Enviar e-mail de confirmação (opcional)" name="order_btn" class="btn">
             <input type="submit" value="Enviar pedido" name="order_btn" class="btn">
          </form>
 
@@ -150,6 +151,29 @@ if (isset($_POST['order_btn'])) {
    </div>
 
    <script src="js/script.js"></script>
+
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+   </script>
+   <script type="text/javascript">
+      (function() {
+         emailjs.init("1TLlMH070uuppliAQ");
+      })();
+   </script>
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+   <script type="text/javascript">
+      var options = {
+         onKeyPress: function(phone, e, field, options) {
+            var masks = ['(00) 00000-0000', '(00) 0000-0000'];
+            var mask = (phone.length > 14) ? masks[1] : masks[0];
+            $('#celular').mask(mask, options);
+         }
+      };
+
+      $("#numero_confirmacao").mask("(00) 00000-0000", options);
+   </script>
 
 </body>
 
