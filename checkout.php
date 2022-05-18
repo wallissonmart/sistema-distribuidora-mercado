@@ -118,8 +118,7 @@ if (isset($_POST['order_btn'])) {
                <div class="inputBox">
                   <span>Método de pagamento</span>
                   <select name="method">
-                     <option value="Dinheiro" selected>Dinheiro</option>
-                     <option value="PIX">PIX</option>
+                     <option value="PIX" selected>PIX</option>
                      <option value="Crédito">Crédito</option>
                      <option value="Débito">Débito</option>
                   </select>

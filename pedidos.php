@@ -39,7 +39,8 @@
                     while ($fetch_order = mysqli_fetch_assoc($select_products)) {
                 ?>
                         <div class="">
-                            <i style="font-size: 3.5rem" class="fa-solid fa-paperclip"></i>
+                            <i style="font-size: 3.5rem; position: absolute;
+                            z-index: 1; top: 15.4rem" class="fa-solid fa-paperclip"></i>
                             <div class="box">
                                 <h3 name="update_status_id">Número do pedido: <?php echo $fetch_order['id']; ?></h3>
                                 <h3>Cliente: <?php echo $fetch_order['name']; ?></h3>
@@ -53,7 +54,6 @@
                     };
                 };
                 ?>
-
 
             </div>
 
