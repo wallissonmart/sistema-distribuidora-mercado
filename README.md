@@ -16,8 +16,7 @@
 </h3>
 
 <h1 align="left" id="acessar">👆 Como acessar</h1>
-Para acessar o sistema online bastar clicar no seguinte link: ---
-
+Para acessar o sistema online bastar clicar no seguinte link: https://sistema-distribuidora.herokuapp.com/index.php
 <h1 align="left" id="funcionalidades">⚙️ Funcionalidades</h1>
 
 - [x] Loguin com autenticação de usuário;
