@@ -1,9 +1,9 @@
 <?php
 
-$usuario = 'root';
-$senha = '';
-$database = 'shopping_db';
-$host = 'localhost';
+$usuario = 'b9a0d3a1f05872';
+$senha = 'f56cb28e';
+$database = 'heroku_375e7dceb007d23';
+$host = 'us-cdbr-east-06.cleardb.net';
 
 $mysqli = new mysqli($host, $usuario, $senha, $database);
 
