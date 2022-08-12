@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-lg-5 col-xs-12 about-company">
                     <h2 class="text-white">Slogan</h2>
-                    <p class="pr-5 text-white-50 slogan" style="font-size: 2.2rem;">Aqui você encontra de tudo um pouco, <br> ou pouco um pouco de tudo.</p>
+                    <p class="pr-5 text-white-50 slogan" style="font-size: 2rem;">Aqui você encontra de tudo um pouco, <br> ou pouco um pouco de tudo.</p>
                     <p class="fs-2"><a href="#"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
