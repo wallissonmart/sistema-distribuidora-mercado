@@ -86,7 +86,7 @@ if (isset($_POST['email']) || isset($_POST['senha'])) {
                                 <input type="text" name="email" class="text form-control my-4 py-2" placeholder="Usuário">
                                 <input type="password" name="senha" class="text form-control my-4 py-2" placeholder="Senha">
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-primary btn-loguin">Loguin</button>
+                                    <button type="submit" class="btn btn-primary btn-loguin">Login</button>
                                 </div>
                             </form>
                             <a href="../index.php" class="text-decoration-none">Voltar</a>

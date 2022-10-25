@@ -19,7 +19,7 @@
                         <li><a href="index.php#sobre">Sobre</a></li>
                         <li><a href="index.php#contato">Contato</a></li>
                         <li><a href="cart.php">Carrinho</a></li>
-                        <li><a href="loguin/loguin.php">Loguin</a></li>
+                        <li><a href="loguin/loguin.php">Login</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-4 col-xs-12 location text-white-50">
